@@ -1,4 +1,10 @@
-from utils import db_connect
-engine = db_connect()
+from utils import get_engine
 
-# your code here
+
+def main() -> None:
+    engine = get_engine()
+    # your code here
+
+
+if __name__ == "__main__":
+    main()
